@@ -15,8 +15,8 @@ df = pd.read_csv('german.data', sep=r'\s+', header=None, names=headers)
 map_codes(df)
 df_numerical = pd.read_csv('german.data-numeric', sep=r'\s+', header=None)
 
-# cluster_plot(df)
-# decision_tree_plot(df)
+cluster_plot(df)
+decision_tree_plot(df)
 
 
 forest_comparison(0.20, 0.40, 0.05, df_numerical)
